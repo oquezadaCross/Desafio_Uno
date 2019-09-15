@@ -1,0 +1,19 @@
+
+spring:
+  data:
+    rest:
+      base-path: /api/v1
+  jackson:
+    time-zone: GMT-4
+logging:
+    level:
+        root: warn
+        com.previred: INFO
+        org.springframework.web: warn
+        org.springframework.boot: warn
+server:
+    port: 8081
+    servlet:
+      context-path: /api/v1
+custom:
+    backendService: http://127.0.0.1:8080/periodos/api
